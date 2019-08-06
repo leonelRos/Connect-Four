@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Montserrat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section.markers {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-gap: 1vmin;
+    margin-bottom: 1vmin;
+  }
+  
+  section.markers div {
+    border-top: 5vmin solid lightgrey;
+    border-left: 5vmin solid transparent;
+    border-right: 5vmin solid transparent;
+  }
+  
+  section.markers div:hover {
+    border-top-color: grey;
+  }
+  
+  section.board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+    grid-gap: 1vmin;
+  }
+  
+  section.board div {
+    border-radius: 50%;
+    border: 1px solid grey;
+  }
